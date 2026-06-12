@@ -1,1 +1,280 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projeto Agrinho — Do Campo à Cidade</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body>
 
+  <!-- NAVEGAÇÃO -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#home" class="nav-logo">
+        <span class="logo-leaf">🌿</span> Agrinho
+      </a>
+      <ul class="nav-links">
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#temas">Temas</a></li>
+        <li><a href="#galeria">Galeria</a></li>
+        <li><a href="#participar">Participar</a></li>
+        <li><a href="#contato" class="nav-cta">Inscreva-se</a></li>
+      </ul>
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <canvas id="seedCanvas"></canvas>
+    <div class="hero-content">
+      <p class="hero-eyebrow">Paraná · 2025</p>
+      <h1 class="hero-title">Do Campo<br><em>à Cidade</em></h1>
+      <p class="hero-subtitle">
+        O Projeto Agrinho conecta educação, sustentabilidade e o futuro
+        do agronegócio paranaense para crianças e jovens de todo o estado.
+      </p>
+      <div class="hero-actions">
+        <a href="#participar" class="btn btn-primary">Quero Participar</a>
+        <a href="#sobre" class="btn btn-ghost">Saiba Mais</a>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <span>Role para explorar</span>
+      <div class="scroll-arrow"></div>
+    </div>
+  </section>
+
+  <!-- SOBRE -->
+  <section class="sobre" id="sobre">
+    <div class="container">
+      <div class="sobre-grid">
+        <div class="sobre-text">
+          <p class="section-eyebrow">O que é</p>
+          <h2 class="section-title">Um projeto que semeia o futuro</h2>
+          <p>
+            Criado pelo <strong>Sistema FAEP/SENAR-PR</strong>, o Agrinho é
+            um dos maiores projetos socioeducacionais do Brasil. Desde 1995,
+            já beneficiou mais de <strong>2 milhões de estudantes</strong>
+            da rede pública do Paraná.
+          </p>
+          <p>
+            O programa aproxima o estudante urbano da realidade rural,
+            promovendo valores como cidadania, sustentabilidade,
+            responsabilidade ambiental e a importância do agronegócio
+            para o desenvolvimento do estado.
+          </p>
+          <div class="sobre-stats">
+            <div class="stat">
+              <strong>30+</strong>
+              <span>Anos de história</span>
+            </div>
+            <div class="stat">
+              <strong>2M+</strong>
+              <span>Alunos beneficiados</span>
+            </div>
+            <div class="stat">
+              <strong>399</strong>
+              <span>Municípios atendidos</span>
+            </div>
+          </div>
+        </div>
+        <div class="sobre-visual">
+          <div class="visual-card card-1">
+            <div class="card-icon">🌾</div>
+            <p>Agricultura sustentável como base do aprendizado</p>
+          </div>
+          <div class="visual-card card-2">
+            <div class="card-icon">🏙️</div>
+            <p>A cidade e o campo em diálogo permanente</p>
+          </div>
+          <div class="visual-card card-3">
+            <div class="card-icon">📚</div>
+            <p>Educação que transforma comunidades</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TEMAS -->
+  <section class="temas" id="temas">
+    <div class="container">
+      <p class="section-eyebrow center">Eixos temáticos</p>
+      <h2 class="section-title center">O que estudamos juntos</h2>
+      <div class="temas-grid">
+        <div class="tema-card" data-tema="sustentabilidade">
+          <div class="tema-icon">🌱</div>
+          <h3>Sustentabilidade</h3>
+          <p>Práticas agrícolas que respeitam o meio ambiente e garantem recursos para as próximas gerações.</p>
+          <span class="tema-tag">Meio Ambiente</span>
+        </div>
+        <div class="tema-card" data-tema="tecnologia">
+          <div class="tema-icon">🤖</div>
+          <h3>Tecnologia no Campo</h3>
+          <p>Inovação e transformação digital que aumentam a produtividade e reduzem o impacto ambiental.</p>
+          <span class="tema-tag">Inovação</span>
+        </div>
+        <div class="tema-card" data-tema="agua">
+          <div class="tema-icon">💧</div>
+          <h3>Água e Vida</h3>
+          <p>A importância da água para a produção de alimentos e a preservação dos ecossistemas.</p>
+          <span class="tema-tag">Recursos Naturais</span>
+        </div>
+        <div class="tema-card" data-tema="alimentacao">
+          <div class="tema-icon">🥗</div>
+          <h3>Alimentação Saudável</h3>
+          <p>Da horta à mesa: entender de onde vêm os alimentos e como escolher uma dieta equilibrada.</p>
+          <span class="tema-tag">Saúde</span>
+        </div>
+        <div class="tema-card" data-tema="cidadania">
+          <div class="tema-icon">🤝</div>
+          <h3>Cidadania Rural</h3>
+          <p>Valorizar o trabalhador rural e entender seu papel essencial na economia e na sociedade.</p>
+          <span class="tema-tag">Sociedade</span>
+        </div>
+        <div class="tema-card" data-tema="biodiversidade">
+          <div class="tema-icon">🦋</div>
+          <h3>Biodiversidade</h3>
+          <p>Conhecer e preservar a riqueza da fauna e flora paranaense como patrimônio de todos.</p>
+          <span class="tema-tag">Natureza</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALERIA -->
+  <section class="galeria" id="galeria">
+    <div class="container">
+      <p class="section-eyebrow center">Momentos</p>
+      <h2 class="section-title center">Agrinho em ação</h2>
+      <div class="galeria-grid">
+        <div class="galeria-item grande">
+          <div class="galeria-placeholder" style="background: linear-gradient(135deg,#2D6A2F,#4a9e4d)">
+            <span>🌿</span>
+            <p>Visita a propriedades rurais</p>
+          </div>
+        </div>
+        <div class="galeria-item">
+          <div class="galeria-placeholder" style="background: linear-gradient(135deg,#8B5E3C,#b07d54)">
+            <span>🎨</span>
+            <p>Concurso de Desenho</p>
+          </div>
+        </div>
+        <div class="galeria-item">
+          <div class="galeria-placeholder" style="background: linear-gradient(135deg,#F5C842,#f7d96b)">
+            <span>✍️</span>
+            <p>Redações premiadas</p>
+          </div>
+        </div>
+        <div class="galeria-item">
+          <div class="galeria-placeholder" style="background: linear-gradient(135deg,#2D6A2F,#8B5E3C)">
+            <span>🌾</span>
+            <p>Hortas escolares</p>
+          </div>
+        </div>
+        <div class="galeria-item grande">
+          <div class="galeria-placeholder" style="background: linear-gradient(135deg,#1a3f1b,#2D6A2F)">
+            <span>🏆</span>
+            <p>Cerimônia de premiação estadual</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PARTICIPAR -->
+  <section class="participar" id="participar">
+    <div class="container">
+      <div class="participar-inner">
+        <div class="participar-text">
+          <p class="section-eyebrow light">Como participar</p>
+          <h2 class="section-title light">Sua escola pode fazer parte</h2>
+          <p>
+            O Agrinho é aberto a escolas públicas estaduais e municipais do Paraná.
+            Professores, alunos e comunidade escolar podem se engajar em atividades
+            pedagógicas, concursos de redação, desenho e muito mais.
+          </p>
+          <ul class="participar-lista">
+            <li><span>✅</span> Gratuito para escolas públicas</li>
+            <li><span>✅</span> Material pedagógico fornecido</li>
+            <li><span>✅</span> Premiações estaduais e nacionais</li>
+            <li><span>✅</span> Formação continuada para professores</li>
+          </ul>
+        </div>
+        <div class="participar-form-wrap">
+          <div class="participar-form">
+            <h3>Demonstre interesse</h3>
+            <div class="form-group">
+              <label>Nome da escola</label>
+              <input type="text" id="escola" placeholder="Ex.: E.E.B. João Neves" />
+            </div>
+            <div class="form-group">
+              <label>Município</label>
+              <input type="text" id="municipio" placeholder="Ex.: Curitiba" />
+            </div>
+            <div class="form-group">
+              <label>E-mail do responsável</label>
+              <input type="email" id="email" placeholder="professor@escola.pr.gov.br" />
+            </div>
+            <div class="form-group">
+              <label>Série(s) envolvidas</label>
+              <select id="serie">
+                <option value="">Selecione...</option>
+                <option>1º ao 3º ano (Fundamental I)</option>
+                <option>4º ao 5º ano (Fundamental I)</option>
+                <option>6º ao 9º ano (Fundamental II)</option>
+                <option>Ensino Médio</option>
+                <option>Todas as séries</option>
+              </select>
+            </div>
+            <button class="btn btn-primary full" id="submitBtn" onclick="enviarFormulario()">
+              Enviar interesse
+            </button>
+            <p class="form-note" id="formMsg"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTATO -->
+  <footer class="footer" id="contato">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="logo-leaf">🌿</span>
+          <strong>Agrinho</strong>
+          <p>Sementes de conhecimento para o Paraná do futuro.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Links úteis</h4>
+          <ul>
+            <li><a href="#sobre">Sobre o projeto</a></li>
+            <li><a href="#temas">Temas 2025</a></li>
+            <li><a href="#participar">Como participar</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Contato</h4>
+          <ul>
+            <li><a href="https://www.agrinho.com.br" target="_blank">agrinho.com.br</a></li>
+            <li><a href="mailto:agrinho@sistemafaep.org.br">agrinho@sistemafaep.org.br</a></li>
+            <li>Sistema FAEP/SENAR-PR</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Projeto Agrinho — Sistema FAEP/SENAR-PR. Todos os direitos reservados.</p>
+        <p>Desenvolvido com 💚 para o Paraná</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
